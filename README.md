@@ -1,5 +1,6 @@
 # PR AUC
 Estimation of precision-recall AUC with confidence interval, following Boyd et al (2013).
+Mirror of OCaml implementation at https://github.com/pveber/prc/
 
 ## Installation
 
