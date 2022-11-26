@@ -65,9 +65,9 @@ prauc_logit_ci = function(avg_auc, alpha, n_pos) {
 #' @param oracle oracle column containing true labels
 #' @param pval if true, transform scores as ( 1 - score )
 #' @return tibble containing PR AUC estimates, including average and confidence interval
-#' @references Boyd, K., Eng, K. H., & Page, C. D. (2013). \
-#' Area under the precision-recall curve: point estimates and confidence intervals. \
-#' In Joint European conference on machine learning and knowledge discovery in databases (pp. 451-466). \
+#' @references Boyd, K., Eng, K. H., & Page, C. D. (2013).
+#' Area under the precision-recall curve: point estimates and confidence intervals.
+#' In Joint European conference on machine learning and knowledge discovery in databases (pp. 451-466).
 #' Springer, Berlin, Heidelberg.
 #' @export
 prauc = function(df, scores, oracle, alpha = 0.05, pval = F) {

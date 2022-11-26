@@ -6,9 +6,9 @@ Authors@R: c(
            comment = c(ORCID = "0000-0002-7984-9554")),
     person("Philippe", "Veber", role=c("aut")))
 Description:
-  Compute average precision-recall with logit confidence interval, \
-  following Boyd et al. (2013). \
-  Designed to integrate with `dplyr` syntax.
+  Compute average precision-recall with logit confidence interval,
+  following Boyd et al. (2013).
+  Designed to integrate with dplyr syntax.
 License: use_gpl3_license()
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
