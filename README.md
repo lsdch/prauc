@@ -10,6 +10,8 @@ devtools::install_github("https://github.com/lsdch/prauc")
 
 ## Usage 
 
+This package is designed to integrate with dplyr syntax, and operates on dataframes or tibbles by specifying columns that contain the relevant data.
+
 ```R
 prauc_estimates = preds_df %>% prauc::prauc(score_col, oracle_col, alpha=0.05)
 ```
