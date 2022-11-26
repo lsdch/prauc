@@ -1,10 +1,10 @@
 Package: prauc
 Title: PR AUC Estimates With Confidence Interval
 Version: 1.0.0
-Authors@R:
+Authors@R: c(
     person("Louis", "Duchemin", , "ls.duchemin@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7984-9554")),
-    person("Philippe", "Veber", role=c("aut"))
+    person("Philippe", "Veber", role=c("aut")))
 Description:
   Compute average precision-recall with logit confidence interval, \
   following Boyd et al. (2013). \
