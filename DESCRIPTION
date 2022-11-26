@@ -1,0 +1,18 @@
+Package: prauc
+Title: PR AUC Estimates With Confidence Interval
+Version: 1.0.0
+Authors@R:
+    person("Louis", "Duchemin", , "ls.duchemin@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7984-9554")),
+    person("Philippe", "Veber", role=c("aut"))
+Description:
+  Compute average precision-recall with logit confidence interval, \
+  following Boyd et al. (2013). \
+  Designed to integrate with `dplyr` syntax.
+License: use_gpl3_license()
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+Imports:
+  dplyr (>= 1.0.0)
+
