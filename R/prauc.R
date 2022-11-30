@@ -70,11 +70,11 @@ prauc_logit_ci = function(avg_auc, alpha, n_pos) {
 #' In Joint European conference on machine learning and knowledge discovery in databases (pp. 451-466).
 #' Springer, Berlin, Heidelberg.
 #' @export
-prauc = function(df, scores, oracle, alpha = 0.05, pval = F) {
+pr_auc = function(df, scores, oracle, alpha = 0.05, pval = F) {
   scores = pull(df, {{ scores }})
   oracle = pull(df, {{ oracle }})
   n_pos = sum(oracle)
-  avg = auc_average_precision(scores, oracle, pval)
-  ci = auc_logit_ci(avg, alpha, n_pos)
+  avg = prauc_avg(scores, oracle, pval)
+  ci = prauc_logit_ci(avg, alpha, n_pos)
   as_tibble_row(c(prauc = avg, ci))
 }
